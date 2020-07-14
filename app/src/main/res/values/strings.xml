@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Navigation Drawer Material Library</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="my_app_title">Walimi</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="import_camera">Import</string>
+    <string name="gallery">Gallery</string>
+    <string name="slideshow">Slideshow</string>
+    <string name="tools">Tools</string>
+    <string name="communicate">Communicate</string>
+    <string name="share">Share</string>
+    <string name="send">Send</string>
+    <string name="chose_camera">You chose Camera Import.</string>
+    <string name="chose_gallery">You chose the Gallery.</string>
+    <string name="chose_slideshow">You chose the Slideshow.</string>
+    <string name="chose_tools">You chose Tools.</string>
+    <string name="chose_share">You chose Share.</string>
+    <string name="chose_send">You chose Send.</string>
+    <string name="menu_camera">Camera</string>
+    <string name="menu_report_problem">Report Problem</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_favourites">Favourites</string>
+    <string name="menu_previous_orders">Previous orders</string>
+    <string name="chose_profile">\"You chose Profile\"</string>
+    <string name="chose_favourites">You chose Favourites</string>
+    <string name="chose_previous_orders">You chose previous orders</string>
+    <string name="chose_report_problem">You chose Report a problem</string>
+    <string name="chose_settings">You chose settings</string>
+    <string name="food_name_placeholder">Name of food item</string>
+    <string name="price_placeholder">Price of item</string>
+
+    <string-array name="food_items">
+        <item>Passion Fruits</item>
+        <item>Bananas</item>
+        <item>Chicken</item>
+        <item>Mangoes</item>
+        <item>Tomatoes</item>
+        <item>Cabbage</item>
+        <item>Eggs</item>
+        <item>Jackfruit</item>
+        <item>Matooke</item>
+    </string-array>
+
+    <string-array name="food_prices">
+        <item>4000 sh</item>
+        <item>5000 sh</item>
+        <item>30000 sh</item>
+        <item>4000 sh</item>
+        <item>3500 sh</item>
+        <item>4500 sh</item>
+        <item>8000 sh</item>
+        <item>12000 sh</item>
+        <item>21000 sh</item>
+    </string-array>
+
+    <array name="food_images">
+        <item>@drawable/passion_fruit</item>
+        <item>@drawable/bananas</item>
+        <item>@drawable/chicken</item>
+        <item>@drawable/mangoes</item>
+        <item>@drawable/tomatoes</item>
+        <item>@drawable/cabbage</item>
+        <item>@drawable/eggs</item>
+        <item>@drawable/jackfruit</item>
+        <item>@drawable/matooke</item>
+    </array>
+</resources>

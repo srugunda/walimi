@@ -1,0 +1,2 @@
+rootProject.name='Navigation Drawer Material Library'
+include ':app'
