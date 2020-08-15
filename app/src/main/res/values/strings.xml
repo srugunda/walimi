@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Navigation Drawer Material Library</string>
+    <string name="app_name">Walimi</string>
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
@@ -41,38 +41,47 @@
     <string name="price_placeholder">Price of item</string>
 
     <string-array name="food_items">
-        <item>Passion Fruits</item>
         <item>Bananas</item>
-        <item>Chicken</item>
-        <item>Mangoes</item>
+        <item>Apples</item>
         <item>Tomatoes</item>
-        <item>Cabbage</item>
-        <item>Eggs</item>
-        <item>Jackfruit</item>
-        <item>Matooke</item>
+        <item>Lettuce</item>
+        <item>Sukuma wiki</item>
+        <item>Eggplant</item>
+        <item>Spinach</item>
+        <item>Avocado</item>
+        <item>Brocolli</item>
+        <item>Garlic</item>
+        <item>Peppers</item>
+        <item>Cauliflower</item>
     </string-array>
 
     <string-array name="food_prices">
-        <item>4000 sh</item>
-        <item>5000 sh</item>
-        <item>30000 sh</item>
-        <item>4000 sh</item>
-        <item>3500 sh</item>
-        <item>4500 sh</item>
-        <item>8000 sh</item>
-        <item>12000 sh</item>
-        <item>21000 sh</item>
+        <item>4,000 sh</item>
+        <item>5,000 sh</item>
+        <item>30,000 sh</item>
+        <item>4,000 sh</item>
+        <item>3,500 sh</item>
+        <item>4,500 sh</item>
+        <item>8,000 sh</item>
+        <item>12,000 sh</item>
+        <item>21,000 sh</item>
+        <item>8,000 sh</item>
+        <item>12,000 sh</item>
+        <item>21,000 sh</item>
     </string-array>
 
     <array name="food_images">
-        <item>@drawable/passion_fruit</item>
         <item>@drawable/bananas</item>
-        <item>@drawable/chicken</item>
-        <item>@drawable/mangoes</item>
-        <item>@drawable/tomatoes</item>
-        <item>@drawable/cabbage</item>
-        <item>@drawable/eggs</item>
-        <item>@drawable/jackfruit</item>
-        <item>@drawable/matooke</item>
+        <item>@drawable/apples</item>
+        <item>@drawable/tomatoes1</item>
+        <item>@drawable/lettuce</item>
+        <item>@drawable/sukuma_wiki</item>
+        <item>@drawable/egg_plant</item>
+        <item>@drawable/spinach</item>
+        <item>@drawable/avocado</item>
+        <item>@drawable/brocolli</item>
+        <item>@drawable/garlic</item>
+        <item>@drawable/peppers</item>
+        <item>@drawable/cauliflower</item>
     </array>
 </resources>

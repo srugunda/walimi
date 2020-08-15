@@ -28,6 +28,9 @@ public class DetailsActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
         //handling adaptive layout to remove swiping if rotated to landscape mode
         int gridColumnCount =
                 getResources().getInteger(R.integer.grid_column_count);

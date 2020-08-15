@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1045144214240",
+    "firebase_url": "https://walimi-4f34f.firebaseio.com",
+    "project_id": "walimi-4f34f",
+    "storage_bucket": "walimi-4f34f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045144214240:android:017765b4419954becf4e85",
+        "android_client_info": {
+          "package_name": "com.example.walimiwithdrawer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1045144214240-tgrdi1a7dvth528rnlu2jn3nslhi16bc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU2TpTqzCOo-Qq33gexh7m-7fmmMIoGHo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1045144214240-tgrdi1a7dvth528rnlu2jn3nslhi16bc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
