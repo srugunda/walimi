@@ -39,6 +39,7 @@
     <string name="chose_settings">You chose settings</string>
     <string name="food_name_placeholder">Name of food item</string>
     <string name="price_placeholder">Price of item</string>
+    <string name="action_logout">Logout</string>
 
     <string-array name="food_items">
         <item>Bananas</item>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.navigationdrawermateriallibrary.AdminAddNewProductActivity">
+
+<include
+    android:id="@+id/myappbar"
+    layout="@layout/app_bar_main" />
+
+<TextView
+    android:id="@+id/title_add_new_product"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    android:text="Add New Product"
+    android:textColor="@color/colorPrimary"
+    android:textSize="30sp"
+    android:layout_below="@id/myappbar"/>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/title_add_new_product"
+    android:layout_marginTop="35dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_add_new_product"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:src="@drawable/poultry_category"
+            android:adjustViewBounds="true"
+            android:maxHeight="150dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:src="@drawable/fruits_category"
+            android:adjustViewBounds="true"
+            android:maxHeight="150dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:src="@drawable/fresh_dairy_category"
+            android:adjustViewBounds="true"
+            android:maxHeight="150dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:src="@drawable/meat_category"
+            android:adjustViewBounds="true"
+            android:maxHeight="150dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:src="@drawable/vegetables_category"
+            android:adjustViewBounds="true"
+            android:maxHeight="150dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:src="@drawable/cereals_category"
+            android:adjustViewBounds="true"
+            android:maxHeight="150dp"/>
+
+    </LinearLayout>
+</ScrollView>
+
+
+</RelativeLayout>

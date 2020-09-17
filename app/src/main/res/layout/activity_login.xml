@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/small_basket_background"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/walimi_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/walimi_web_logo"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:maxHeight="200dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Linking Farmers Directly to Markets"
+        android:textColor="@android:color/black"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="212dp"/>
+    
+    <EditText
+        android:id="@+id/login_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone number"
+        android:maxLines="1"
+        android:layout_marginTop="270dp"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/main_button"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:layout_below="@id/login_phone_number"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/main_button"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/check_box_remember_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_password"
+        android:layout_alignLeft="@id/login_password"
+        android:layout_marginTop="4dp"
+        android:text="Remember me"
+        android:textColor="@color/colorPrimary"
+        android:outlineSpotShadowColor="@android:color/white"
+        android:outlineAmbientShadowColor="@android:color/white"
+        android:shadowColor="@android:color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget password?"
+        android:layout_below="@id/login_password"
+        android:layout_alignRight="@id/login_password"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorPrimary"/>
+
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:layout_below="@id/check_box_remember_me"
+        android:background="@drawable/main_button_colored"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="6dp"/>
+
+    <TextView
+        android:id="@+id/i_am_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am a Farmer"
+        android:textStyle="bold"
+        android:layout_below="@id/login_button"
+        android:layout_alignRight="@id/login_password"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/login_pg_create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:layout_below="@id/login_button"
+        android:layout_alignLeft="@id/login_password"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/i_am_not_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am not a farmer"
+        android:layout_below="@id/login_button"
+        android:layout_alignLeft="@id/login_password"
+        android:textColor="@color/colorPrimary"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
