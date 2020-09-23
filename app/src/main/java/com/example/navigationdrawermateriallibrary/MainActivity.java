@@ -11,10 +11,13 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.navigationdrawermateriallibrary.Prevalent.PrevalentItem;
 import com.google.android.material.navigation.NavigationView;
 
+import de.hdodenhof.circleimageview.CircleImageView;
 import io.paperdb.Paper;
 
 public class MainActivity extends AppCompatActivity
@@ -24,6 +27,9 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Paper.init(this);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -40,6 +46,12 @@ public class MainActivity extends AppCompatActivity
         if (navigationView != null) {
             navigationView.setNavigationItemSelectedListener((NavigationView.OnNavigationItemSelectedListener) this);
         }
+
+        View headerView = navigationView.getHeaderView(0);
+        TextView userNameTextView = headerView.findViewById(R.id.user_profile_name);
+        CircleImageView profileImageView = headerView.findViewById(R.id.user_profile_image);
+
+        userNameTextView.setText(PrevalentItem.currentOnlineUser.getName());
     }
 
     /**
@@ -85,6 +97,7 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.action_settings) {
             return true;
         }
+        /*
         else if(id == R.id.action_logout){
             Paper.book().destroy();
             Intent intent = new Intent(MainActivity.this, LoginActivity.class);
@@ -92,6 +105,8 @@ public class MainActivity extends AppCompatActivity
             Toast.makeText(MainActivity.this, "Logged out of account", Toast.LENGTH_SHORT).show();
             finish();
         }
+
+         */
 
         return super.onOptionsItemSelected(item);
     }
@@ -108,42 +123,32 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         // Handle navigation view item clicks here.
         switch (item.getItemId()) {
-            case R.id.nav_profile:
+            case R.id.nav_cart:
                 // Handle the camera import action (for now display a toast).
                 drawer.closeDrawer(GravityCompat.START);
                 displayToast(getString(R.string.chose_profile));
                 return true;
-            case R.id.nav_favourites:
+            case R.id.nav_orders:
                 // Handle the gallery action (for now display a toast).
                 drawer.closeDrawer(GravityCompat.START);
                 displayToast(getString(R.string.chose_favourites));
                 return true;
-            case R.id.nav_previous_orders:
+            case R.id.nav_categories:
                 // Handle the slideshow action (for now display a toast).
                 drawer.closeDrawer(GravityCompat.START);
                 displayToast(getString(R.string.chose_previous_orders));
                 return true;
-            case R.id.nav_report_problem:
+            case R.id.nav_settings:
                 // Handle the tools action (for now display a toast).
                 drawer.closeDrawer(GravityCompat.START);
                 displayToast(getString(R.string.chose_report_problem));
                 return true;
-            case R.id.nav_settings:
-                // Handle the tools action (for now display a toast).
-                drawer.closeDrawer(GravityCompat.START);
-                displayToast(getString(R.string.chose_settings));
-                return true;
-
-            case R.id.nav_share:
-                // Handle the share action (for now display a toast).
-                drawer.closeDrawer(GravityCompat.START);
-                displayToast(getString(R.string.chose_share));
-                return true;
-            case R.id.nav_send:
-                // Handle the send action (for now display a toast).
-                drawer.closeDrawer(GravityCompat.START);
-                displayToast(getString(R.string.chose_send));
-                return true;
+            case R.id.nav_logout:
+                Paper.book().destroy();
+                Intent intent = new Intent(MainActivity.this, WelcomeActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
+                finish();
             default:
                 return false;
         }

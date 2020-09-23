@@ -128,6 +128,7 @@ public class LoginActivity extends AppCompatActivity {
                         if(parentDbName.equals("Users")) {
                             Toast.makeText(LoginActivity.this, "Successful Login", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                            PrevalentItem.currentOnlineUser = user;
                             startActivity(intent);
                         }
                         else if(parentDbName.equals("Admins")){
