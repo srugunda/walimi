@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_w_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FarmerCategoryActivity"></activity>
+        <activity android:name=".MainActivity_Tabs"></activity>
+        <activity android:name=".FarmerCategoryActivity" />
         <activity android:name=".AdminAddNewProductActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
@@ -22,13 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".CartActivity" />
-        <activity
-            android:name=".DetailsActivity"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.navigationdrawermateriallibrary.MainActivity" />
-        </activity>
+        <activity android:name=".DisplayItemsActivity" />
         <activity android:name=".MainActivity" />
     </application>
 

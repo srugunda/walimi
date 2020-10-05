@@ -105,7 +105,7 @@ public class WelcomeActivity extends AppCompatActivity {
                     String dbPassword = user.getPassword();
                     if (dbPassword.equals(existingPassword)){//Log the person in
                         Toast.makeText(WelcomeActivity.this, "Welcome back to Walimi", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(WelcomeActivity.this, MainActivity.class);
+                        Intent intent = new Intent(WelcomeActivity.this, DisplayItemsActivity.class);
                         startActivity(intent);
                         progressDialog.dismiss();
                     }

@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/drawer_layout_1"
+    android:id="@+id/drawer_layout_display_items"
     tools:context=".MainActivity">
 
     <include
-        layout="@layout/content_farmer_categories"
+        layout="@layout/content_display_items"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
     <com.google.android.material.navigation.NavigationView
-        android:id="@+id/navigation_view"
+        android:id="@+id/navigation_view_display_items"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"

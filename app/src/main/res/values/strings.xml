@@ -85,4 +85,9 @@
         <item>@drawable/peppers</item>
         <item>@drawable/cauliflower</item>
     </array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_label1">By Product</string>
+    <string name="tab_label2">By Farmer</string>
 </resources>
