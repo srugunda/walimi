@@ -90,4 +90,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="tab_label1">By Product</string>
     <string name="tab_label2">By Farmer</string>
+    <string name="farmer_name_placeholder">Farmer Name</string>
+    <string name="date_added_placeholder">Date added</string>
+    <string name="decription_placeholder">Description</string>
 </resources>
